@@ -1,7 +1,7 @@
 /* Step 1 import express
  *
  */
-const express = require('express')
+// const express = require('express')
 
 /* Step 2
  *
@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const templateApi = require('../models/template.js')
+// const templateApi = require('../models/template.js')
 
 /* Step 3 
  * 
@@ -25,7 +25,7 @@ const templateApi = require('../models/template.js')
  * TODO: rename this from templateRouter to something that makes sense. (e.g:
  * `shopRouter`)
  */
-const templateRouter = express.Router()
+// const templateRouter = express.Router()
 
 /* Step 4
  * 
@@ -36,15 +36,15 @@ const templateRouter = express.Router()
  *
  * TODO: delete this handler; it's just a sample
  */ 
-templateRouter.get('/', (req, res) => {
-  res.json(templateApi.getHelloWorldString())
-})
+// templateRouter.get('/', (req, res) => {
+//   res.json(templateApi.getHelloWorldString())
+// })
 
 /* Step 6
  *
  * Export the router from the file.
  *
  */
-module.exports = {
-  templateRouter
-}
+// module.exports = {
+//   templateRouter
+// }

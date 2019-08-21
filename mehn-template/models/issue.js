@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('./connection.js');
 
-IssueSchema = new mongoose.Schema({
+const IssueSchema = new mongoose.Schema({
     description: String,
     createdAt: Date,
     status: String,
@@ -12,21 +12,20 @@ const IssueCollection = mongoose.model('Issue', IssueSchema)
 const getAllIssues = () =>{
     return IssueCollection.find()
 }
+
 const getIssue = (IssueId) => {
-    return IssueCollection.findById(id)
+    return IssueCollection.findById(IssueId)
 }
+
 const addNewIssue = (NewIssue) => {
-    return IssueCollection.create({
-        description: "",
-        createdAt: new Date(),
-        status: "",
-        priority: ""
-      })
+    return IssueCollection.insertMany([NewIssue])
 }
+
 const updateIssue = (IssueId,updatedIssue) => {
-    return 
+    return IssueCollection.findByIdAndUpdate(IssueId,updatedIssue)
 }
-const deleteIssue = (IssueId) => {
+
+const deleteIssue = (id) => {
     return IssueCollection.findOneAndDelete({ _id: id })
 }
 

@@ -18,7 +18,7 @@
  * your data once you stop running your server.
  *
  */
-global.sampleModel = [];
+// global.sampleModel = [];
 
 /* Step 2
  *
@@ -43,15 +43,15 @@ global.sampleModel = [];
  * TODO: delete this it's just a sample
  *
  */
-function getHelloWorldString() {
-  return 'hello world'
-}
+// function getHelloWorldString() {
+//   return 'hello world'
+// }
 
 /* Step 5
  *
  * TODO: export all functions from this file by adding their names as keys to this
  * object
  */
-module.exports = {
-  getHelloWorldString
-}
+// module.exports = {
+//   getHelloWorldString
+// }

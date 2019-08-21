@@ -1,0 +1,12 @@
+
+<body>
+    <h1> All Issues</h1>
+    <a href='/issue/newIssue'>new issue</a>
+   <ol>
+       {{#each issuesinDB}}
+       <li>
+       <a href='/issue/{{_id}}/edit'>{{description}}</a>
+       </li>
+       {{/each}}
+   </ol>
+</body>
